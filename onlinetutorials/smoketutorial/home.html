@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoke animations</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="/script.js" defer></script> -->
+</head>
+<body>
+    <section>
+       <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem facilis beatae odio nobis, alias ipsa quaerat dolores quibusdam. Sequi cumque aliquid nihil libero, totam minima laborum voluptates repellat tempore modi!
+       </p>
+    </section>
+    <script>
+        
+        const text = document.querySelector('.text')
+        text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>")
+
+        const letters = document.querySelectorAll('span')
+       document.addEventListener("DOMContentLoaded",loaded)
+       
+       function loaded(){
+        for (let i = 0; i < letters.length; i++) {
+           const element = letters[i];
+
+           element[i].addEventListener("mouseover",function(){
+           console.log(element[i])
+         })
+    
+}
+       }
+    
+
+// for (let i=0; i<letters.length; i++){
+//     letters[i].addEventListener('mouseover',function(){
+//         letters[i].classList.add('active');
+//     })
+// }
+    </script>
+</body>
+</html>

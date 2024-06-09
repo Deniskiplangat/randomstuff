@@ -1,0 +1,34 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:transparent;
+    color: black;
+}
+.para{
+    background-color:#196997;
+    color: white;
+}
+/* button:hover{
+    background-color:#196997;
+    color: white;
+} */
+.new{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+.news{
+    display: none;
+}

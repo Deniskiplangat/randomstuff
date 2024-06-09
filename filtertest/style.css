@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.imgcontainer{
+    width: 60%;
+    height: 80%;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgcontainer img {
+    height: 100%;
+    width: auto;
+    filter: brightness(150%);
+    transform: scaleY(-1);
+    transform: rotate(270deg);
+  }
